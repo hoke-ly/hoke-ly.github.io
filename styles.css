@@ -1,0 +1,87 @@
+html {
+  overflow-x: hidden;
+
+  height: 100%;
+}
+
+#hover {
+  font-family: 'Questrial';/* From https://css.glass */
+            background: rgba(255, 255, 255, 0.23);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.1px);
+            -webkit-backdrop-filter: blur(4.1px);
+            border: 1px solid rgba(255, 255, 255, 0.65);margin: auto;width: 25%;
+}
+
+#hover:hover {
+  font-family: 'Questrial';/* From https://css.glass */
+            background: rgba(49, 29, 181, 0);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.1px);
+            -webkit-backdrop-filter: blur(4.1px);
+            border: 1px solid rgba(255, 255, 255, 0.65);margin: auto;width: 25%;
+}
+
+#glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    color: #fefefe;
+}
+
+#webcoderskull{
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+.typed {
+    width: 22ch;
+    animation: 2s typing 2s steps(22), blink .5s step-end 10 alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family:'Inconsolata', monospace;
+    font-size: 25px;
+    color: #fefefe;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.libutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    font-family: "SF Pro Text", Helvetica, sans-serif;
+}
+
+/*<div id="hover">
+            <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=kelly-ho-is-here" target="_blank">Follow Me on LinkedIn</a>
+            </div>  
