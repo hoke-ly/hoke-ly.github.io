@@ -80,6 +80,21 @@ html {
     text-decoration: none !important;
     color: #ffffff !important;
     font-family: "SF Pro Text", Helvetica, sans-serif;
+
+  /* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+a:hover {
+  font-size: 20 px;
+}
 }
 
 /*<div id="hover">
