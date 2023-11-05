@@ -39,6 +39,54 @@ html {
     color: #fefefe;
 }
 
+
+
+#glass button:hover{
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.23);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.7px);
+-webkit-backdrop-filter: blur(5.7px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+text-align: center;
+display: grid;
+place-items: center;
+align-items: center;
+color: #fefefe;
+cursor: pointer;
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  color: #fefefe;
+}
+
+.glass:hover {
+  /* From https://css.glass */
+  background: rgba(43, 46, 222, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  color: #fefefe;
+}
+
 #webcoderskull{
     position: absolute;
     left: 0;
@@ -80,21 +128,6 @@ html {
     text-decoration: none !important;
     color: #ffffff !important;
     font-family: "SF Pro Text", Helvetica, sans-serif;
-
-  /* unvisited link */
-a:link {
-  color: white;
-}
-
-/* visited link */
-a:visited {
-  color: grey;
-}
-
-/* mouse over link */
-a:hover {
-  font-size: 20 px;
-}
 }
 
 /*<div id="hover">
