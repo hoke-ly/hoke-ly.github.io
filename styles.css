@@ -142,7 +142,7 @@ textarea {
   background-color:#ffffff76;
 }
 
-textarea:hover {
+textarea:focus {
   padding: 10px 10px;
   margin-bottom: 15px;
   border-radius: 5px;
