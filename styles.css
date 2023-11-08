@@ -4,6 +4,11 @@ html {
   height: 100%;
 }
 
+::selection {
+  color: #0e0e0e;
+  background-color: #fefefe8b;
+}
+
 #hover {
   font-family: 'Questrial';/* From https://css.glass */
             background: rgba(255, 255, 255, 0.23);
@@ -129,6 +134,21 @@ cursor: pointer;
     color: #ffffff !important;
     font-family: "SF Pro Text", Helvetica, sans-serif;
 }
+
+textarea {
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color:#ffffff76;
+}
+
+textarea:hover {
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color:#fefefed4;
+}
+
 
 /*<div id="hover">
             <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=kelly-ho-is-here" target="_blank">Follow Me on LinkedIn</a>
