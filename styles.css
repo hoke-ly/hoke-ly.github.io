@@ -4,9 +4,12 @@ html {
   height: 100%;
 }
 
-::selection {
-  color: #0e0e0e;
-  background-color: #fefefe8b;
+a{
+color:#aeaeae;
+}
+
+a:hover{
+  color: #fefe30;
 }
 
 #hover {
@@ -142,12 +145,13 @@ textarea {
   background-color:#ffffff76;
 }
 
-textarea:focus {
+textarea:hover {
   padding: 10px 10px;
   margin-bottom: 15px;
   border-radius: 5px;
   background-color:#fefefed4;
 }
+
 
 
 /*<div id="hover">
