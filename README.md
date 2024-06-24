@@ -1,5 +1,5 @@
 # hoke-ly.github.io
-Personal Webisite of Kelly Ho
+Personal Website of Kelly Ho
 
 > Beta version basically means coding is messy
 
