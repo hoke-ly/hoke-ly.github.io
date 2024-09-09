@@ -1,0 +1,186 @@
+/* set the overall style 
+
+    padding: 10vh 10vw;
+    padding: 10px;
+*/
+body {
+    color:#18191c;
+    font-size: 12px;
+    font-family: "Fira Code", monospace;
+}
+
+/* header */
+
+.header{
+    background-color: #fff;
+    width: 100%;
+    height: 20px;
+    padding: 20px 20px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 999; 
+
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    text-align: center;
+
+    transition: all 700ms, color ease-in 0.3s;
+}
+  
+.header.scrolled {
+    background-color: #083451;
+    color: #fff;
+
+    transition: all 700ms, color ease-in 0.3s;
+}
+
+.header h1 {
+    font-weight: bold;
+
+    display: inline-flex;
+    justify-content: center;
+}
+
+.header span {
+    width: 60px;
+    margin-right: 5px;
+
+    text-align: center;
+
+    transition: transform 500ms ease-in-out, font-family 500ms ease-in-out;
+}
+
+.header h1:hover span{ 
+    animation: font-changing 1500ms ease-in-out 0ms infinite;
+}
+
+@keyframes font-changing {
+    15% {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    30% {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    45% {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    60% {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    75% {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    100% {
+        font-family: 'Fira Code', monospace;
+    }
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li .current {
+    color: #18191c;
+}
+
+.header.scrolled nav ul li .current {
+    color: #fff;
+}
+
+
+/* hover effects from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/*/
+.header nav ul li a {
+    color: #979fb5;
+    text-decoration: none;
+
+    position: relative;
+}
+  
+.header nav ul li a:hover {
+    color: #18191c;
+}
+
+.header.scrolled nav ul li a:hover {
+    color: #fff;
+}
+  
+.header nav ul li a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: -8px;
+    left: 0;
+    background-color: #176294;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+.header.scrolled nav ul li a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: -8px;
+    left: 0;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+  
+.header nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+
+footer {
+    margin-top: 50px;
+    color:#979fb5;
+    height: 30px;
+    text-align: center;
+}
+@media screen and (max-width:650px) {
+
+    body {
+        font-size: 16px;
+        margin: 10vh 10vw;
+        padding: 10px;
+        color:#18191c;
+        font-family: "Fira Code", monospace;
+    }
+    
+    header {
+        margin: 10vh 1vw;
+        display: block;
+    }
+    header h1 {
+        height: 20px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    header nav ul{
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    header nav ul li:active {
+        font-weight: bold;
+    }
+
+    .main {
+        display: block;
+        text-align: center;
+    }
+}
