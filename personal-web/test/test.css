@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .header nav ul li {
+    margin-right: 20px;
+  }
+  
+  .header nav ul li a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .header nav ul li a.current {
+    font-weight: bold;
+  }
+  
+  .hero, .about, .experience, .contact {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #176294;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
