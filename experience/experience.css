@@ -1,0 +1,319 @@
+body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    transition: all 300ms;
+}
+
+@keyframes background-change {
+    0% {
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+    10% {
+        background: rgb(2,0,36);
+        background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+    20% {
+        background: rgb(2,0,36);
+        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+    30% {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+    40% {
+        background: rgb(2,0,36);
+        background: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+    50% {
+        background: rgb(2,0,36);
+        background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+    60% {
+        background: rgb(2,0,36);
+        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+    70% {
+        background: rgb(2,0,36);
+        background: linear-gradient(210deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+    80% {
+        background: rgb(2,0,36);
+        background: linear-gradient(240deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+    90% {
+        background: rgb(2,0,36);
+        background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+    100% {
+        background: rgb(2,0,36);
+        background: linear-gradient(300deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.21894695378151263) 0%, rgba(0,212,255,1) 100%);
+    }
+}
+
+main {
+    margin-top: 80px;
+    display: block;
+}
+
+main {
+    animation: go-up ease-in-out 1000ms 1;
+}
+
+@keyframes go-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+main h1 {
+    width: fit-content;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0e3854;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+
+main p {
+    font-size: 18px;
+    width: fit-content;
+    margin: 0 auto;
+    border: #176294;
+}
+
+main .circle-img {
+    display: block;
+    width: 6rem;
+    border-radius: 100%;
+    border: #176294 3px solid;
+    margin: 1rem auto;
+}
+
+
+/*https://www.youtube.com/watch?v=29deL9MFfWc*/
+
+.card-list {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.card {
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+        /* From https://css.glass */
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+}
+
+.card:focus-within~.card, .card:hover~.card {
+    transform: translateX(130px);
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+
+.card-header {
+    margin-bottom: auto;
+}
+
+.card-header p {
+    font-size: 14px;
+    margin: 0 0 1rem;
+    color: #7a7a8c;
+}
+
+.card-header h2 {
+    font-size: 20px;
+    margin: .25rem 0 auto;
+    text-decoration: none;
+    color: inherit;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.card-header h2:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.card-author {
+    margin: 3rem 0 0;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.author-avatar {
+    grid-area: auto;
+    align-self: start;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.partner-avatar img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    overflow: hidden;
+    margin: 16px 10px;
+}
+
+.author-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: block;
+    overflow: hidden;
+    margin: 16px 10px;
+}
+
+.author-name {
+    grid-area: auto;
+    box-sizing: border-box;
+}
+
+.author-name-prefix {
+    font-style: normal;
+    font-weight: 700;
+    color: #7a7a8c;
+}
+
+.half-circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 48px;
+    fill: none;
+    stroke: #ff8a00;
+    stroke-width: 8;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.tags {
+    margin: 1rem 0 2rem;
+    padding: .5rem 0 1rem;
+    line-height: 2;
+    margin-bottom: 0;
+}
+
+.tags a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: .5rem;
+    color: #7a7a8c;
+    text-transform: uppercase;
+    font-size: .66rem;
+    border: 3px solid #28242f;
+    border-radius: 2rem;
+    padding: .2rem .85rem .25rem;
+    position: relative;
+}
+
+.tags a:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    background-clip: text;
+    border-color:#cecece;
+}
+
+/* Modified Code from Uiverse.io by joe-watson-sbf 
+https://uiverse.io/joe-watson-sbf/little-goat-24
+*/ 
+.flip-card-container {
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 50%;
+    height: 15rem;
+    perspective: 1000px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    padding-bottom: 10px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: #fff;
+    color: #176294;
+  }
+  
+  .flip-card-back {
+    background: #28242f;
+    color: white;
+    transform: rotateY(180deg);
+  }

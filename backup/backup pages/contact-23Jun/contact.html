@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Kelly Ho is Here!</title>
+        <meta name="description" content="Kelly Ho's personal web">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/template/destyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/template/universal.css">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1><span>Kelly Ho</span> is Here.</h1>
+            <nav>
+                <ul>
+                    <li><a href="/about/about.html">ABOUT</a></li>
+                    <li><a href="/experience/experience.html">EXPERIENCE</a></li>
+                    <li><a class="current" href="/contact/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Contact Me!</h1>
+            <form id="myForm" class="formContainer" method="post" action="https://script.google.com/macros/s/AKfycbz_-Jqp0wTACHBK5jjkmliUBDb5DHMRPH2cnf3-0IyCFknURbCkPmdjtpNTnA5MBRRe/exec">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Your message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <input type="hidden" name="formSubmitUrl" value="https://script.google.com/macros/s/AKfycbz_-Jqp0wTACHBK5jjkmliUBDb5DHMRPH2cnf3-0IyCFknURbCkPmdjtpNTnA5MBRRe/exec">
+                
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <div id="loadingScreen" class="hidden">
+                <div class="spinner"></div>
+                <p>Sending...<br>It generally takes 5 secs, if not, try resubmitting.</p>
+              </div>
+            <!--<div class="success-message" id="successMessage" style="display: none;">Form submitted successfully!</div>-->
+            <footer>
+                <p>&copy; 2024 Kelly Ho. All rights reserved.</p>
+            </footer>
+        </main>       
+        <script src="contact.js"></script>
+        <script src="../template/universal.js"></script>
+    </body>
+</html>

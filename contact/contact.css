@@ -1,0 +1,120 @@
+main {
+    margin-top: 60px;
+    margin-left: 20px;
+    display: block;
+    text-align: center;
+}
+
+main {
+    animation: go-up ease-in-out 1000ms 1;
+}
+
+@keyframes go-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+main h1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #176294;
+}
+
+#name, #email {
+    margin-top: 5px;
+    border: #176294 1px solid;   
+    border-radius: 6px; 
+    height: 20px;
+    width: 200px;
+}
+
+#message {
+    margin-top: 5px;
+    border: #176294 1px solid;   
+    border-radius: 6px;
+    width: 300px;
+    height: 100px;
+    text-align: left;
+}
+
+#submit {
+    color: #fff;
+    background-color: #176294;
+    padding: 10px;
+}
+
+#submit:hover {
+    background-color: #1684cd;
+}
+
+#message {
+    padding:10px;
+}
+
+#loadingScreen {
+    display: block;
+    margin-top: 10px;
+    color: #176294;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #176294;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }    
+
+/*
+.success-message {
+    background-color: #176294;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px auto;
+    width: 300px;
+    padding: 10px;
+    border: #176294 1px solid;
+    border-radius: 6px; 
+    opacity: 0;
+    animation: fadeOut 5s forwards;
+}
+*/
+
+#success-message {
+    font-size: 20px;
+    font-weight: bold;
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hidden, #loadingScreen.hidden, .success-message.hidden, .formContainer.hidden{
+    display: none;
+}
