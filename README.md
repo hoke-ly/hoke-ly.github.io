@@ -1,5 +1,7 @@
 # hoke-ly.github.io (Updated)
 ## Personal Website of Kelly Ho
+To access the web, please go to https://hoke-ly.github.io/about/about.html
+For the order version: https://hoke-ly.github.io/main.html
 > ### Folder Structure
 >
 > #### Template Folder
